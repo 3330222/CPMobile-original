@@ -1,0 +1,78 @@
+<div class = "facility-Container">
+
+	<!-- Header -->
+	<div class="nav-header navbar-fixed-top facility-Header">
+
+		<table width = "100%" height = "100%">
+			<tr width = "100%" height = "100%">
+				<td width = "10%" align = "left">
+					<a href = "#/main" class = "facility-BackBtn">
+				    	<img src="images/arrow-left.png">
+				    </a>
+				</td>
+				<td width = "80%" align = "center">
+					My Booking
+				</td>
+				<td width = "10%" align = "center">
+					<!-- <a href = "#/add_facility" ></a> -->
+					<button id = "facility-AddIcon" ng-click = "validateToken()" class = "btn btn-default">Add</button>
+				</td>
+			</tr>
+		</table>
+		
+	</div>
+
+	<!-- Content -->
+	<div>
+		
+		<div class="list-group">
+		  <a href="#/facility_form" class="list-group-item">
+		  	<button class = "btn btn-success" id = "facility-ListIcon"></button>
+		    <h4 class="list-group-item-heading">Function Room</h4>
+		    <p class="list-group-item-text">28/06/2014 12:00 pm - 02:00 pm</p>
+		  </a>
+		  <a href="#/facility_form" class="list-group-item">
+		  	<button class = "btn btn-danger" id = "facility-ListIcon"></button>
+		    <h4 class="list-group-item-heading">KTV Room</h4>
+		    <p class="list-group-item-text">28/06/2014 12:00 pm - 02:00 pm</p>
+		  </a>
+		  <a href="#/facility_form" class="list-group-item">
+		  	<button class = "btn btn-warning" id = "facility-ListIcon"></button>
+		    <h4 class="list-group-item-heading">Tennis Court 1</h4>
+		    <p class="list-group-item-text">28/06/2014 12:00 pm - 02:00 pm</p>
+		  </a>
+		  <a href="#/facility_form" class="list-group-item">
+		  	<button class = "btn btn-success" id = "facility-ListIcon"></button>
+		    <h4 class="list-group-item-heading">Tennis Court 2</h4>
+		    <p class="list-group-item-text">28/06/2014 12:00 pm - 02:00 pm</p>
+		  </a>
+		  <a href="#/facility_form" class="list-group-item">
+		  	<button class = "btn btn-success" id = "facility-ListIcon"></button>
+		    <h4 class="list-group-item-heading">Function Room</h4>
+		    <p class="list-group-item-text">28/06/2014 12:00 pm - 02:00 pm</p>
+		  </a>
+		  <a href="#/facility_form" class="list-group-item">
+		  	<button class = "btn btn-danger" id = "facility-ListIcon"></button>
+		    <h4 class="list-group-item-heading">KTV Room</h4>
+		    <p class="list-group-item-text">28/06/2014 12:00 pm - 02:00 pm</p>
+		  </a>
+		</div>
+
+	</div>
+
+</div>
+
+
+<div class="modal fade" id="facilityModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header panel-heading panel-danger">
+      	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Warning !</h4>
+      </div>
+      <div class="modal-body">
+        {{warningMessage}}
+      </div>
+    </div>
+  </div>
+</div>

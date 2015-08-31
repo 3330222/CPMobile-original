@@ -1,0 +1,51 @@
+<div class = "login-Container">
+
+	<table width = "100%" height = "100%">
+		<tr width = "100%" height = "30%">
+			<td>
+				<img src="images/LoginPageImg.png">
+			</td>
+		</tr>
+		<tr width = "100%" height = "30%">
+			<td>
+				<div class = "login-UserInput">
+					<p><input ng-model="userId" class="form-control" type = "text" id = "userId" placeholder = "USER ID"/></p>
+					<p><input ng-model="password" class="form-control" type = "password" id = "password" placeholder = "PASSWORD"/></p>
+					<label class="checkbox-inline login-RememberMe">
+			  			<input type="checkbox" class = "btn-large"> Remember Me
+					</label>
+				</div>
+			</td>
+		</tr>
+		<tr width = "100%" height = "10%">
+			<td>
+				<!-- <a ng-href="#/main" class="btn btn-warning login-btn">LOGIN</a> -->
+				<button ng-click = "login()" class = "btn btn-warning login-btn">LOGIN</button>
+			</td>
+		</tr>
+		<tr width = "100%" height = "30%">
+			<td>
+				<div class = "login-ContactInfo">
+					<p>MCST 3736<br>
+					Management Office<br>
+					<h3>+65 6659 4060</h3></p>
+				</div>
+			</td>
+		</tr>
+	</table>
+
+</div>
+
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header panel-heading">
+      	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Error</h4>
+      </div>
+      <div class="modal-body">
+        {{errorMessage}}
+      </div>
+    </div>
+  </div>
+</div>
